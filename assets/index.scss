@@ -1,0 +1,157 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    > header {
+        text-align: center;
+        box-shadow: rgb(0, 0, 0) 0px 0px 5px 1px;
+        position: relative;
+        padding: 5px 0px;
+
+        > img {
+            height: 30px;
+            width: 150px;
+            padding: 5px 0px 5px 0px;;
+        }
+    }
+    >main{
+        >section#présentation{
+            text-align: center;
+            background-color: rgb(245, 245, 245);
+            >form{
+                text-align: center;
+                background-color: rgb(233, 233, 233);
+                padding: 5px 0px;
+                >i{
+
+                }
+                >input{
+                    background: none;
+                    border: none;
+
+                }
+            }
+            >h1{
+                margin: 20px;
+            }
+            >p{
+                margin: 20px;
+            }
+            >button{
+                margin-bottom: 20px;
+                background: linear-gradient(-5deg, #9356dc,#ff79da );
+                border-radius: 20px;
+                border: none;
+                padding: 10px;
+                color: white;
+            }
+        }
+        >section#fonctionnement{
+        margin: 20px 20px 30px 20px;
+            div{
+                background-color: whitesmoke;
+                margin-bottom: 10px;
+                padding: 10px;
+                border-radius: 15px;
+                font-weight: bolder;
+                i{
+                width: 15px;
+                padding: 0px 30px 10px 10px;
+                }
+                transition: background-color 1s;
+                &:hover{
+                    background-color: #c1afda;
+                }
+                p{
+                    display:inline-block;
+                    background-color: #9356dc;
+                    border-radius: 15px;
+                    width: 15px;
+                    height: 15px;
+                    position: relative;
+                    right: 25px;
+                    bottom: -5px;
+                    margin: 0px;
+                    padding: 5px;
+                    color: white;
+                    span{
+                        
+                        position: absolute;
+                        left: 8px;
+                        top: 3px;
+                    }
+                }
+            }
+        }
+        >section#Restaurants{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgb(245, 245, 245);
+            
+            >h1{
+                flex-basis: 90%;
+                
+            }
+            >div{
+              
+               position: relative;
+                box-shadow: rgb(189, 189, 189) 5px 5px 10px;
+                border-radius: 15px;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                flex-basis: 90%;
+                >img{
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 15px 15px 0px 0px;
+                }
+                >h3{
+                    margin: 10px 0px 0px 5px;
+                }
+                >p{
+                    margin: 5px 0px 0px 5px;
+                   
+                }
+                >#coeur{
+                    width: 15px;
+                    height: 15px;
+                    position: absolute;
+                    right: 30px;
+                    bottom: 30px;
+                    transition: color 0.5s;
+                    background: -moz-linear-gradient(red, yellow);
+                    &hover{
+                     
+                    }
+                }
+                    span{
+                        position: absolute;
+                        display: inline-block;
+                        top: 20px;
+                        right: 10px;
+                        background-color: rgb(136, 185, 173);
+                        color: rgb(34, 102, 85);
+                        border-radius: 5px;
+                        padding: 5px;
+                    }
+                
+            }
+        }
+    }
+    >footer{
+        background-color: rgb(68, 68, 68);
+        margin: 0px;
+        >h2{
+            margin: 0px;
+            padding-left: 20px;
+            color: white;
+        }
+        >ul{
+            margin: 0px;
+            list-style: none;
+            color: white;
+            padding: 5px 0px 10px 20px;
+            font-size: small;
+        }
+    }
+}
