@@ -1,16 +1,20 @@
+@import "scss/main.scss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Shrikhand&display=swap');
 body {
+    
+        font-family:  'Raleway', sans-serif;
+    
     padding: 0px;
     margin: 0px;
     > header {
-        text-align: center;
+        display: flex;
         box-shadow: rgb(0, 0, 0) 0px 0px 5px 1px;
         position: relative;
         padding: 5px 0px;
-
+        justify-content: center;
         > img {
-            height: 30px;
             width: 150px;
-            padding: 5px 0px 5px 0px;;
+            padding: 5px 0px 5px 0px;;    
         }
     }
     >main{
@@ -92,14 +96,17 @@ body {
                 flex-basis: 90%;
                 
             }
-            >div{
-              
-               position: relative;
+            >a{
+                color: #000;
+                text-decoration: none;
+                position: relative;
                 box-shadow: rgb(189, 189, 189) 5px 5px 10px;
                 border-radius: 15px;
                 margin-bottom: 20px;
                 padding-bottom: 20px;
                 flex-basis: 90%;
+                
+                
                 >img{
                     width: 100%;
                     height: 200px;
@@ -107,6 +114,11 @@ body {
                 }
                 >h3{
                     margin: 10px 0px 0px 5px;
+                    color: black;
+                    transition: color 2s;
+                    &:hover{
+                        color: #ff0202;
+                        }
                 }
                 >p{
                     margin: 5px 0px 0px 5px;
@@ -145,6 +157,7 @@ body {
             margin: 0px;
             padding-left: 20px;
             color: white;
+            font-family: 'Shrikhand', cursive;
         }
         >ul{
             margin: 0px;
