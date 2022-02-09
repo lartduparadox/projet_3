@@ -1,4 +1,65 @@
-@import "scss/main.scss";
+@import "./scss/main.scss";
+
+
+/***********************************/
+/***********************************/
+/***********************************/
+
+
+
+@media all and (max-width:$mobile){
+  body{
+    &>header{}
+    &>nav{}
+    &>main{
+      &>section{}
+      &>article{}
+    }
+    &>footer{
+      &>ul{}
+    }
+  }
+}
+@media all and (min-width:$mobile) and (max-width:$tablette){
+  body{
+    &>header{}
+    &>nav{}
+    &>main{
+      &>section{}
+      &>article{}
+    }
+    &>footer{
+      &>ul{}
+    }
+  }
+}
+@media all and (min-width:$desktop) and (max-width:$tv){
+  body{
+    &>header{}
+    &>nav{}
+    &>main{
+      &>section{}
+      &>article{}
+    }
+    &>footer{
+      &>ul{}
+    }
+  }
+}
+@media all and (min-width:$tv){
+  body{
+    &>header{}
+    &>nav{}
+    &>main{
+      &>section{}
+      &>article{}
+    }
+    &>footer{
+      &>ul{}
+    }
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Shrikhand&display=swap');
 body {
     
@@ -20,7 +81,7 @@ body {
     >main{
         >section#présentation{
             text-align: center;
-            background-color: rgb(245, 245, 245);
+            background-color: rgb(255, 255, 255);
             >form{
                 text-align: center;
                 background-color: rgb(233, 233, 233);
@@ -103,7 +164,6 @@ body {
                 box-shadow: rgb(189, 189, 189) 5px 5px 10px;
                 border-radius: 15px;
                 margin-bottom: 20px;
-                padding-bottom: 20px;
                 flex-basis: 90%;
                 
                 
@@ -115,27 +175,32 @@ body {
                 >h3{
                     margin: 10px 0px 0px 5px;
                     color: black;
-                    transition: color 2s;
+                    transition: color 1s;
                     &:hover{
-                        color: #ff0202;
+                        color: #9356DC;
                         }
                 }
                 >p{
                     margin: 5px 0px 0px 5px;
                    
                 }
-                >#coeur{
-                    width: 15px;
-                    height: 15px;
-                    position: absolute;
-                    right: 30px;
-                    bottom: 30px;
-                    transition: color 0.5s;
-                    background: -moz-linear-gradient(red, yellow);
-                    &hover{
-                     
-                    }
+                >.fa-heart{
+                  position: relative;
+                  right: -80%;
+                  bottom: 10%;
                 }
+                .fa-heart:before{position:absolute;}
+                .fa-heart::after{
+                  content: "";
+                  position: relative;
+                  background: linear-gradient(#FF79DA, #9356DC);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  font-weight: 900;
+                  opacity: 0;
+                  transition: opacity 0.4s;
+                }
+                .fa-heart:hover::after{opacity: 1;}                
                     span{
                         position: absolute;
                         display: inline-block;
